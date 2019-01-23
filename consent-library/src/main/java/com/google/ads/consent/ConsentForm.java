@@ -173,7 +173,7 @@ public class ConsentForm {
         private boolean adFreeOption;
         private final URL appPrivacyPolicyURL;
 
-        public Builder(Context context, URL appPrivacyPolicyURL) {
+        public Builder(Context context, URL appPrivacyPolicyURL, String testText1, String testText2) {
             this.context = context;
             this.personalizedAdsOption = false;
             this.nonPersonalizedAdsOption = false;
