@@ -836,68 +836,68 @@
   </script>
 </head>
 <body>
-  <div id="overlay" class="center hidden">
-    <div id="content">
-      <div id="content-box">
-        <div class="app-title flex-center">
-          <span id="title_app_name" class="app_name">App Name</span>
-        </div>
-        <div id="options">
-          <div id="title_head">
-            <div class="head_intro">Záleží nám na tvojom súkromí a bezpečnosti tvojich údajov. Táto aplikácia je zadarmo vďaka zobrazovaniu reklám.</div>
-            <div id="head_question">Môžeme naďalej používať tvoje údaje na prispôsobenie reklám?</div>
-            <div class="head_detail">
-              <span id="change_anytime_text1">Svoj výber môžeš kedykoľvek zmeniť v nastaveniach aplikácie <span class="app_name">App Name</span></span>
-              <span id="head_detail_text">Naši partneri zozbierajú údaje a použijú jedinečný identifikátor na tvojom zariadení pre zobrazenie reklám.
-                <a href="#" onclick="showProviders();">Zisti, ako <span class="app_name">App Name</span> a našich <span id="providers_count"></span> partnerov zbiera a používa údaje.</a>
+<div id="overlay" class="center hidden">
+  <div id="content">
+    <div id="content-box">
+      <div class="app-title flex-center">
+        <span id="title_app_name" class="app_name">App Name</span>
+      </div>
+      <div id="options">
+        <div id="title_head">
+          <!--1--><div class="head_intro"          >Záleží nám na tvojom súkromí a bezpečnosti tvojich údajov.</div>
+          <!--3--><div id="head_question"          >Môžeme naďalej používať tvoje údaje na prispôsobenie reklám?</div>
+          <div class="head_detail">
+            <!--4--><span id="change_anytime_text1">Svoj výber môžeš kedykoľvek zmeniť v nastaveniach aplikácie <span class="app_name">App Name</span>.</span>
+            <!--5--><span id="head_detail_text"    >Naši partneri zozbierajú údaje a použijú jedinečný identifikátor na tvojom zariadení pre zobrazenie reklám.
+            <!--6--><a href="#" onclick="showProviders();">Zisti, ako <span class="app_name">App Name</span> a našich <span id="providers_count"></span> partnerov zbiera a používa údaje.</a>
               </span>
-            </div>
-          </div>
-          <div id="buttons" data-sel="">
-            <div id="btn0" class="button btn0 flex-center" onclick="actionClick(event, 'agree0');">
-              <div class="button_title">Áno, zobrazovať relevantné reklamy</div>
-            </div>
-            <div id="btn1" class="button btn1 flex-center" onclick="showUniqueIdInfo();">
-              <div id="btn1_title" class="button_title">Nie, zobrazovať menej relevantné reklamy.</div>
-            </div>
-            <div id="btn2" class="button btn2 flex-center" onclick="actionClick(event, 'install');">
-              <div class="button_title">Pay for the ad-free version</div>
-            </div>
           </div>
         </div>
-        <div id="consent0" class="consent no-display">
-          <div class="message"><span id="change_anytime_text2">Svoj výber môžeš kedykoľvek zmeniť v nastaveniach aplikácie <span class="app_name">App Name</span>.</span>Learn how our partners collect and use data:</div>
-          <div id="providers">
+        <div id="buttons" data-sel="">
+          <div id="btn0" class="button btn0 flex-center" onclick="actionClick(event, 'agree0');">
+            <!--true--><div class="button_title">Áno, zobrazovať relevantné reklamy</div>
           </div>
-          <div class="how-use-data"><a href="#" onclick="showAppPrivacyPolicy(event)">How <span class="app_name">App Name</span> uses your data</a></div>
-          <div class="footer">
-            <div class="actions">
-              <div class="back btn" onclick="actionClick(event, 'back0')">Back</div>
-            </div>
+          <div id="btn1" class="button btn1 flex-center" onclick="showUniqueIdInfo();">
+            <!--false--><div id="btn1_title" class="button_title">Nie, zobrazovať menej relevantné reklamy</div>
+          </div>
+          <!--NONE--><div id="btn2" class="button btn2 flex-center" onclick="actionClick(event, 'install');">
+          <div class="button_title">Pay for the ad-free version</div>
+        </div>
+        </div>
+      </div>
+      <div id="consent0" class="consent no-display">
+        <!--4--><div class="message"><span id="change_anytime_text2">Svoj výber môžeš kedykoľvek zmeniť v nastaveniach aplikácie <span class="app_name">App Name</span>.</span></div>
+        <div id="providers">
+        </div>
+        <!--8--><div class="how-use-data"><a href="#" onclick="showAppPrivacyPolicy(event)">Ako <span class="app_name">App Name</span> používa tvoje dáta</a></div>
+        <div class="footer">
+          <div class="actions">
+            <div class="back btn" onclick="actionClick(event, 'back0')">Späť</div>
           </div>
         </div>
-        <div id="consent1" class="consent no-display">
-          <div class="message">We’ll partner with Google and use a unique identifier on your device to respect your data usage choice. You can change your choice anytime for <span class="app_name">App Name</span> in the app settings.</div>
-          <div class="how-use-data"><a href="#" onclick="showAppPrivacyPolicy(event)">How <span class="app_name">App Name</span> uses your data</a></div>
-          <div class="footer">
-            <div class="actions">
-              <div id="back-btn" class="back btn" onclick="actionClick(event, 'back1')">Back</div>
-              <div class="agree btn" onclick="actionClick(event, 'agree1')">Agree</div>
-            </div>
+      </div>
+      <div id="consent1" class="consent no-display">
+        <!--7 + 4--><div class="message">V spolupráci s Google použijeme jedinečný identifikátor na tvojom zariadení, aby sme zohľadnili tvoj výber používania dát. Svoj výber môžeš kedykoľvek zmeniť v nastaveniach aplikácie <span class="app_name">App Name</span>.</div>
+        <!--8-->    <div class="how-use-data"><a href="#" onclick="showAppPrivacyPolicy(event)">How <span class="app_name">App Name</span> uses your data</a></div>
+        <div class="footer">
+          <div class="actions">
+            <div id="back-btn" class="back btn" onclick="actionClick(event, 'back1')">Späť</div>
+            <div class="agree btn" onclick="actionClick(event, 'agree1')">Súhlasím</div>
           </div>
         </div>
+      </div>
         <div id="consent2" class="consent no-display">
-          <div class="head_intro">We care about your privacy and data security. We keep this app free by showing ads.</div>
-          <div class="message">We’ll partner with Google and use a unique identifier on your device to serve non-personalized ads.</div>
-          <div class="how-use-data"><a href="#" onclick="showAppPrivacyPolicy(event)">How <span class="app_name">App Name</span> uses your data</a></div>
-          <div class="footer">
-            <div class="actions">
-              <div class="agree btn" onclick="actionClick(event, 'agree1')">Agree</div>
-            </div>
+            <!--1 + 2--><div class="head_intro">We care about your privacy and data security. We keep this app free by showing ads.</div>
+            <!--7-->    <div class="message"   >We´ll partner with Google and use a unique identifier on your device to respect your data usage choice.</div>
+            <!--8-->    <div class="how-use-data"><a href="#" onclick="showAppPrivacyPolicy(event)">How <span class="app_name">App Name</span> uses your data</a></div>
+        <div class="footer">
+          <div class="actions">
+            <div class="agree btn" onclick="actionClick(event, 'agree1')">Súhlasím</div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </body>
 </html>
