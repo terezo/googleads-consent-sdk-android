@@ -35,6 +35,8 @@ import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.google.android.ads.consent.R;
 import com.google.gson.Gson;
 import java.io.ByteArrayOutputStream;
 import java.net.URL;
@@ -270,7 +272,7 @@ public class ConsentForm {
         }
 
         this.loadState = LoadState.LOADING;
-        this.webView.loadUrl("file:///android_asset/consentform.html");
+        this.webView.loadUrl("file:///android_asset/consentform_"+context.getString(R.string.lang)+".html");
     }
 
     private void handleLoadComplete(String status) {
